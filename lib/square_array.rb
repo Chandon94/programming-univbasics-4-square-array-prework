@@ -1,5 +1,6 @@
-def square_array(array)
-  number = [1,2,3]
-  number.collect  {|num| num ** 2}
+class Array
+  def square!
+    self.map {|num| num ** 2}
+    self
   end
 end
